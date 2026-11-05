@@ -1,0 +1,230 @@
+window.top#waybar,
+#left,
+#center,
+#right,
+#workspaces button,
+tooltip {
+    border: none;
+    border-radius: 0;
+    font-family: "Inter, JetBrainsMono Nerd Font Propo";
+    font-size: 12px;
+
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+tooltip {
+  background: rgba(0,0,0,0.67);
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.67);
+}
+tooltip label {
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+#workspaces {
+    background-color: rgba(0,0,0,0.67);
+    padding: 0px 0px;
+    margin: 3px 0px 4px 3px;
+    border-radius: 10px;
+}
+
+/*#workspaces:hover {
+
+}*/
+
+#workspaces button {
+    min-width: 0;
+    border: none;
+    box-shadow: none;
+    font-weight: 500;
+    text-shadow: none;
+    transition: background-color 0.2s linear, color 0.2s linear;
+    border-radius: 10px;
+    padding: 0em 1em;
+    margin: 0;
+    background: transparent;
+    color: white;
+}
+
+#workspaces button:hover {
+    box-shadow: none;
+    font-weight: 500;
+    text-shadow: none;
+}
+
+#workspaces button.active {
+    background-color: rgba(255,255,255,0.67);
+    transition: background-color 0.2s linear, color 0.2s linear;
+    color: black;
+}
+
+#battery,
+#pulseaudio {
+    box-shadow: none;
+    font-weight: 600;
+    text-shadow: none;
+    margin: 3px 3px 4px 3px;
+    padding: 0px 8px;
+    border-radius: 10px;
+    background:rgba(0, 0, 0, 0.67);
+    transition: all 150ms ease-in-out;
+}
+
+#clock {
+    box-shadow: none;
+    font-weight: 700;
+    padding: 0px 4px;
+    margin: 0 2 0 2;
+    border-radius: 10px;
+    background-color:transparent;
+    font-size: 12px;
+    transition: all 150ms ease-in-out;
+}
+
+
+#custom-notifications,
+#language {
+    background-color: transparent;
+    /*margin: 2px 3px 4px 3px;*/
+    padding: 0px 6px;
+    border-radius: 6px;
+}
+
+#power-profiles-daemon {
+    background-color: transparent;
+    padding: 0px 6px;
+    border-radius: 6px;
+}
+
+#custom-poweroff,
+#custom-suspend {
+    padding: 0px 5px;
+    background-color:transparent;
+    border-radius: 12px;
+    transition: all 150ms ease-in-out;
+}
+
+#custom-suspend {
+    margin: 0 0 0 0; /* 2 */
+}
+
+#custom-poweroff {
+    margin: 0 0 0 0; /* 4 */
+}
+
+#battery:hover,
+#pulseaudio:hover {
+    box-shadow: none;
+    background-color: rgba(255,255,255,0.67);
+    color: black;
+    transition: all 150ms ease-in-out;
+}
+
+#custom-poweroff:hover,
+#custom-suspend:hover{
+    box-shadow: none;
+    background-color: rgba(255,255,255,0.67);
+    color: black;
+    transition: all 150ms ease-in-out;
+}
+
+#clock:hover {
+    box-shadow: none;
+    font-weight: 700;
+    text-shadow: none;
+    color: black;
+    background-color: rgba(255,255,255,0.67);
+        transition: all 150ms ease-in-out;
+}
+
+#power-profiles-daemon:hover,
+#custom-notifications:hover {
+    box-shadow: none;
+    font-weight: 500;
+    text-shadow: none;
+}
+
+window#waybar {
+    background: rgba(0,0,0,0.67);
+    color: white;
+}
+
+#subright {
+    background: rgba(0,0,0,0.67);
+    border-radius: 10px;
+    margin: 3px 3px 4px 3px;
+    padding: 0px 3px;
+    transition: all 150ms ease-in-out;
+}
+
+#subright:hover {
+    box-shadow: none;
+    font-weight: 500;
+    text-shadow: none;
+    background-color: rgba(255,255,255,0.67);
+    color: black;
+    transition: all 150ms ease-in-out;
+}
+
+#right {
+    background-color: rgba(0,0,0,0);
+    padding: 0px 0px 0px 4px;
+    border-radius: 0 0 0 15;
+}
+
+#left {
+    background-color: rgba(0,0,0,0);
+    padding: 0px 5px 0px 0px;
+    border-radius: 0 0 15 0;
+}
+
+#center {
+    background-color: rgba(0,0,0,0.67);
+    margin: 3 0 4 0;
+    border-radius: 10px;
+}
+
+/* BOTTOM BAR */
+/* BOTTOM BAR */
+/* BOTTOM BAR */
+
+window.bottom#waybar {
+    background-color: rgba(0,0,0,0.67);
+    font-size: 10px;
+    font-family: "JetBrainsMono Nerd Font Propo";
+}
+
+#hardware {
+    margin: 0px 3px 0px 3px;
+    padding: 0px 4px;
+}
+
+#cpu,
+#memory,
+#temperature {
+    padding: 0px 3px;
+}
+
+#memory {
+    color: mediumpurple;
+}
+
+#cpu {
+    color: indianred;
+}
+
+#temperature {
+    color: yellowgreen;
+}
+
+#network {
+    color: skyblue;
+}
+
+#disk {
+    color: lightyellow;
+}
