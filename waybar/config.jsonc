@@ -13,7 +13,7 @@
     },
     "group/right": {
       "orientation": "inherit",
-      "modules": ["hyprland/language", "group/subright", "pulseaudio", "battery"]
+      "modules": ["hyprland/language", "group/subright", "network", "pulseaudio", "battery"]
     },
     "group/left": {
       "orientation": "inherit",
@@ -89,6 +89,14 @@
   "tooltip": false,
   "return-type": "json",
 },
+"network": {
+  "interface": "wlan0",
+  "format": "{ifname}",
+  "format-wifi": " {essid} 󰖩",
+  "format-ethernet": " {ifname} ",
+  "format-disconnected": "disconnected",
+  "tooltip": false
+}, // can also implement {ipaddr} (larp)
 "hyprland/language": {
 	"format-en": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
 	"format-uk": "🇺🇦",
@@ -122,7 +130,7 @@
   "modules-right": ["group/hardware"],
   "group/hardware": {
     "orientation": "inherit",
-    "modules": ["disk", "network", "temperature", "cpu", "memory"]
+    "modules": ["disk", "temperature", "cpu", "memory"]
   },
   "cpu": {
     "interval": 1,
@@ -130,28 +138,20 @@
     "tooltip": false
   },
   "memory": {
-  "format": "MEM: {used:0.1f}G |",
+  "format": "MEMORY: {used:0.1f}G |",
 	"interval": 2,
 	"tooltip": false
   },
   "temperature": {
-	"format-critical": "{temperatureC}°C ",
+	"format-critical": "{temperatureC}°C (CRITICAL)|",
 	"format": "TEMP: {temperatureC}°C |",
 	"tooltip": false
   },
   "disk": {
     "interval": 30,
     "path": "/home",
-    "format": "DISK: {specific_free:0.2f}G/{specific_total:0.2f}G (/home) | ",
+    "format": "DISK: {specific_free:0.2f}G/{specific_total:0.2f}G (/home) |",
     "unit": "GB",
     "tooltip": false
   },
-  "network": {
-    "interface": "wlan0",
-    "format": " {ifname} |",
-    "format-wifi": " {essid} ({signalStrength}%) |",
-    "format-ethernet": " {ifname} |",
-    "format-disconnected": "disconnected |",
-    "tooltip": false
-  } // can also implement {ipaddr} (larp)
 }]
